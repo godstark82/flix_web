@@ -1,3 +1,7 @@
+import 'package:flix_web/features/home/presentation/pages/about.dart';
+import 'package:flix_web/features/home/presentation/pages/download.dart';
+import 'package:flix_web/features/home/presentation/pages/features.dart';
+import 'package:flix_web/features/home/presentation/pages/header.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -6,9 +10,13 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('FlixStar'),
-        centerTitle: true,
+      body: ListView(
+        children: const [
+          Header(),
+          AboutSection(),
+          Features(),
+          DownloadSection(),
+        ],
       ),
     );
   }

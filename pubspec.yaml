@@ -1,6 +1,6 @@
 name: flix_web
 description: "A new Flutter project."
-publish_to: 'none'
+publish_to: "none"
 version: 0.1.0
 
 environment:
@@ -12,6 +12,8 @@ dependencies:
   bloc: ^8.1.4
   flutter_bloc: ^8.1.6
   equatable: ^2.0.5
+  get: ^4.6.6
+  svg_flutter: ^0.0.1
 
 dev_dependencies:
   flutter_test:
@@ -20,3 +22,6 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icon/
