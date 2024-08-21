@@ -32,7 +32,7 @@ jobs:
 
       # Adjust the base href for GitHub Pages
       - name: Adjust base href
-        run: sed -i 's|<base href="/">|<base href="/<repository-name>/">|' build/web/index.html
+        run: sed -i 's|<base href="/">|<base href="/flix-web/">|' build/web/index.html
 
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
