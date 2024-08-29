@@ -36,7 +36,7 @@ jobs:
 
       # Copy ads.txt to the build directory
       - name: Copy ads.txt
-        run: cp ads.txt build/web/
+        run: cp app-ads.txt build/web/
 
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
