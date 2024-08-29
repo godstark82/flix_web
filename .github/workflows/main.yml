@@ -3,7 +3,7 @@ name: Build and Deploy Flutter Web
 on:
   push:
     branches:
-      - master  # Trigger on pushes to the main branch
+      - master # Trigger on pushes to the main branch
 
 jobs:
   build:
@@ -33,6 +33,10 @@ jobs:
       # Adjust the base href for GitHub Pages
      # - name: Adjust base href
      #   run: sed -i 's|<base href="/">|<base href="/flix_web/">|' build/web/index.html
+
+      # Copy ads.txt to the build directory
+      - name: Copy ads.txt
+        run: cp ads.txt build/web/
 
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
